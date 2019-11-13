@@ -1,0 +1,119 @@
+/**********************************************
+*                                             *
+* Name:   Alexander Wold  (Z1817662)          *
+*         Amy Jakopin     (Z1813641)          *
+*         Dillon Chappell (Z1761203)          *        
+*                                             *
+* File:   Project 8A                          *
+* Due:    12/09/2019                          *
+* Prof:   Raimund Ege                         *
+* Sect:   1                                   *
+*                                             *
+**********************************************/
+
+/**********************************************
+* DELETE EXISTING TABLES TO PREVENT ERROR     *
+**********************************************/
+DROP TABLE IF EXISTS ordereditems;
+DROP TABLE IF EXISTS orders;
+DROP TABLE IF EXISTS inventory;
+DROP TABLE IF EXISTS customer;
+DROP TABLE IF EXISTS admin;
+
+/**********************************************
+* CREATE inventory                            *
+**********************************************/
+CREATE TABLE IF NOT EXISTS inventory (
+	productID	INT AUTO_INCREMENT,
+	quantity	INT,
+
+	PRIMARY KEY (productID)
+);
+
+
+/**********************************************
+* CREATE customer                             *
+**********************************************/
+CREATE TABLE IF NOT EXISTS customer (
+        customerID      INT AUTO_INCREMENT,
+        name            VARCHAR(25),
+        email           VARCHAR(25),
+        address         VARCHAR(30),
+        ccnum           VARCHAR(25),
+        ccexp           VARCHAR(15),
+
+        PRIMARY KEY (customerid)
+);
+
+
+/**********************************************
+* CREATE orders                               *
+**********************************************/
+CREATE TABLE IF NOT EXISTS orders (
+	ordersID	INT AUTO_INCREMENT,
+	custid		INT,
+	status		CHAR(1),
+	totalweight	FLOAT(7,2),
+	addfees		FLOAT(7,2),
+	totalprice	FLOAT(7,2),
+	finalprice	FLOAT(7,2),
+        date		DATE,
+	
+	PRIMARY KEY (ordersID),
+	FOREIGN KEY (custID) REFERENCES customer(customerID)
+);
+
+
+/**********************************************
+* CREATE ordereditems                         *
+**********************************************/
+CREATE TABLE IF NOT EXISTS ordereditems (
+	orderID		INT,
+	quantity	INT,
+	productID	INT,
+
+	PRIMARY KEY (orderID, productID),
+	FOREIGN KEY (orderID) REFERENCES orders(ordersID)
+);
+
+
+
+/*********************************************
+* CREATE admin                               *
+*********************************************/
+CREATE TABLE IF NOT EXISTS admin (
+	bracket		FLOAT(7,2),
+	charge		FLOAT(7,2),
+	flag		CHAR(1),
+
+	PRIMARY KEY (bracket)
+);
+
+/**********************************************
+* DISPLAY THE inventory SCHEMA                *
+**********************************************/
+DESCRIBE inventory;
+
+
+/**********************************************
+* DISPLAY THE orders SCHEMA                   *
+**********************************************/
+DESCRIBE orders;
+
+
+/**********************************************
+* DISPLAY THE customer SCHEMA                 *
+**********************************************/ 
+DESCRIBE customer;
+
+
+/**********************************************
+* DISPLAY THE ordereditems SCHEMA             *
+**********************************************/ 
+DESCRIBE ordereditems;
+
+
+/**********************************************
+* DISPLAY THE admin SCHEMA                    *
+**********************************************/
+DESCRIBE admin;

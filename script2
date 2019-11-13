@@ -1,0 +1,331 @@
+/**********************************************
+*                                             *
+* Name:   Alexander Wold  (Z1817662)          *
+*         Amy Jakopin     (Z1813641)          *
+*         Dillon Chappell (Z1761203)          *
+*                                             *
+* File:   script2                             *
+* Due:    12/09/2019                          *
+* Prof:   Raimund Ege                         *
+* Sect:   1                                   *
+*                                             *
+**********************************************/
+
+/**********************************************
+* PUSH ENTRIES INTO THE ADMIN TABLE           *
+**********************************************/
+INSERT INTO admin (bracket, charge, flag)
+        VALUES (10.00, 2.00, 'F');
+INSERT INTO admin (bracket, charge, flag)
+        VALUES (50.00, 8.00, 'N');
+INSERT INTO admin (bracket, charge, flag)
+        VALUES (100.00, 20.00, 'N');
+INSERT INTO admin (bracket, charge, flag)
+        VALUES (500.00, 50.00, 'N');
+INSERT INTO admin (bracket, charge, flag)
+        VALUES (500.01, 150.00, 'L');
+
+
+
+/**********************************************
+* PUSH ENTRIES INTO THE INVENTORY TABLE       *
+**********************************************/
+INSERT INTO inventory (quantity)
+	VALUES (184);
+INSERT INTO inventory (quantity)
+	VALUES (187);
+INSERT INTO inventory (quantity)
+	VALUES (178);
+INSERT INTO inventory (quantity)
+	VALUES (216);
+INSERT INTO inventory (quantity)
+	VALUES (394);
+INSERT INTO inventory (quantity)
+	VALUES (536);
+INSERT INTO inventory (quantity)
+	VALUES (487);
+INSERT INTO inventory (quantity)
+	VALUES (493);
+INSERT INTO inventory (quantity)
+	VALUES (450);
+INSERT INTO inventory (quantity)
+	VALUES (522);
+INSERT INTO inventory (quantity)
+	VALUES (563);
+INSERT INTO inventory (quantity)
+	VALUES (328);
+INSERT INTO inventory (quantity)
+	VALUES (91);
+INSERT INTO inventory (quantity)
+	VALUES (460);
+INSERT INTO inventory (quantity)
+	VALUES (364);
+INSERT INTO inventory (quantity)
+	VALUES (127);
+INSERT INTO inventory (quantity)
+	VALUES (641);
+INSERT INTO inventory (quantity)
+	VALUES (527);
+INSERT INTO inventory (quantity)
+	VALUES (73);
+INSERT INTO inventory (quantity)
+	VALUES (437);
+INSERT INTO inventory (quantity)
+	VALUES (312);
+INSERT INTO inventory (quantity)
+	VALUES (169);
+INSERT INTO inventory (quantity)
+	VALUES (468);
+INSERT INTO inventory (quantity)
+	VALUES (430);
+INSERT INTO inventory (quantity)
+	VALUES (283);
+INSERT INTO inventory (quantity)
+	VALUES (531);
+INSERT INTO inventory (quantity)
+	VALUES (363);
+INSERT INTO inventory (quantity)
+	VALUES (224);
+INSERT INTO inventory (quantity)
+	VALUES (268);
+INSERT INTO inventory (quantity)
+	VALUES (636);
+INSERT INTO inventory (quantity)
+	VALUES (230);
+INSERT INTO inventory (quantity)
+	VALUES (603);
+INSERT INTO inventory (quantity)
+	VALUES (123);
+INSERT INTO inventory (quantity)
+	VALUES (559);
+INSERT INTO inventory (quantity)
+	VALUES (270);
+INSERT INTO inventory (quantity)
+	VALUES (668);
+INSERT INTO inventory (quantity)
+	VALUES (394);
+INSERT INTO inventory (quantity)
+	VALUES (57);
+INSERT INTO inventory (quantity)
+	VALUES (612);
+INSERT INTO inventory (quantity)
+	VALUES (143);
+INSERT INTO inventory (quantity)
+	VALUES (30);
+INSERT INTO inventory (quantity)
+	VALUES (474);
+INSERT INTO inventory (quantity)
+	VALUES (622);
+INSERT INTO inventory (quantity)
+	VALUES (120);
+INSERT INTO inventory (quantity)
+	VALUES (385);
+INSERT INTO inventory (quantity)
+	VALUES (438);
+INSERT INTO inventory (quantity)
+	VALUES (399);
+INSERT INTO inventory (quantity)
+	VALUES (325);
+INSERT INTO inventory (quantity)
+	VALUES (416);
+INSERT INTO inventory (quantity)
+	VALUES (471);
+INSERT INTO inventory (quantity)
+	VALUES (214);
+INSERT INTO inventory (quantity)
+	VALUES (27);
+INSERT INTO inventory (quantity)
+	VALUES (92);
+INSERT INTO inventory (quantity)
+	VALUES (681);
+INSERT INTO inventory (quantity)
+	VALUES (457);
+INSERT INTO inventory (quantity)
+	VALUES (374);
+INSERT INTO inventory (quantity)
+	VALUES (663);
+INSERT INTO inventory (quantity)
+	VALUES (271);
+INSERT INTO inventory (quantity)
+	VALUES (597);
+INSERT INTO inventory (quantity)
+	VALUES (382);
+INSERT INTO inventory (quantity)
+	VALUES (206);
+INSERT INTO inventory (quantity)
+	VALUES (126);
+INSERT INTO inventory (quantity)
+	VALUES (285);
+INSERT INTO inventory (quantity)
+	VALUES (328);
+INSERT INTO inventory (quantity)
+	VALUES (137);
+INSERT INTO inventory (quantity)
+	VALUES (6);
+INSERT INTO inventory (quantity)
+	VALUES (447);
+INSERT INTO inventory (quantity)
+	VALUES (530);
+INSERT INTO inventory (quantity)
+	VALUES (214);
+INSERT INTO inventory (quantity)
+	VALUES (358);
+INSERT INTO inventory (quantity)
+	VALUES (125);
+INSERT INTO inventory (quantity)
+	VALUES (396);
+INSERT INTO inventory (quantity)
+	VALUES (283);
+INSERT INTO inventory (quantity)
+	VALUES (46);
+INSERT INTO inventory (quantity)
+	VALUES (515);
+INSERT INTO inventory (quantity)
+	VALUES (668);
+INSERT INTO inventory (quantity)
+	VALUES (635);
+INSERT INTO inventory (quantity)
+	VALUES (365);
+INSERT INTO inventory (quantity)
+	VALUES (444);
+INSERT INTO inventory (quantity)
+	VALUES (351);
+INSERT INTO inventory (quantity)
+	VALUES (288);
+INSERT INTO inventory (quantity)
+	VALUES (109);
+INSERT INTO inventory (quantity)
+	VALUES (377);
+INSERT INTO inventory (quantity)
+	VALUES (379);
+INSERT INTO inventory (quantity)
+	VALUES (89);
+INSERT INTO inventory (quantity)
+	VALUES (285);
+INSERT INTO inventory (quantity)
+	VALUES (204);
+INSERT INTO inventory (quantity)
+	VALUES (52);
+INSERT INTO inventory (quantity)
+	VALUES (555);
+INSERT INTO inventory (quantity)
+	VALUES (100);
+INSERT INTO inventory (quantity)
+	VALUES (433);
+INSERT INTO inventory (quantity)
+	VALUES (61);
+INSERT INTO inventory (quantity)
+	VALUES (377);
+INSERT INTO inventory (quantity)
+	VALUES (169);
+INSERT INTO inventory (quantity)
+	VALUES (540);
+INSERT INTO inventory (quantity)
+	VALUES (513);
+INSERT INTO inventory (quantity)
+	VALUES (327);
+INSERT INTO inventory (quantity)
+	VALUES (287);
+INSERT INTO inventory (quantity)
+	VALUES (495);
+INSERT INTO inventory (quantity)
+	VALUES (540);
+INSERT INTO inventory (quantity)
+	VALUES (96);
+INSERT INTO inventory (quantity)
+	VALUES (71);
+INSERT INTO inventory (quantity)
+	VALUES (235);
+INSERT INTO inventory (quantity)
+	VALUES (379);
+INSERT INTO inventory (quantity)
+	VALUES (268);
+INSERT INTO inventory (quantity)
+	VALUES (202);
+INSERT INTO inventory (quantity)
+	VALUES (498);
+INSERT INTO inventory (quantity)
+	VALUES (203);
+INSERT INTO inventory (quantity)
+	VALUES (18);
+INSERT INTO inventory (quantity)
+	VALUES (393);
+INSERT INTO inventory (quantity)
+	VALUES (553);
+INSERT INTO inventory (quantity)
+	VALUES (457);
+INSERT INTO inventory (quantity)
+	VALUES (502);
+INSERT INTO inventory (quantity)
+	VALUES (381);
+INSERT INTO inventory (quantity)
+	VALUES (287);
+INSERT INTO inventory (quantity)
+	VALUES (42);
+INSERT INTO inventory (quantity)
+	VALUES (666);
+INSERT INTO inventory (quantity)
+	VALUES (490);
+INSERT INTO inventory (quantity)
+	VALUES (245);
+INSERT INTO inventory (quantity)
+	VALUES (520);
+INSERT INTO inventory (quantity)
+	VALUES (41);
+INSERT INTO inventory (quantity)
+	VALUES (130);
+INSERT INTO inventory (quantity)
+	VALUES (32);
+INSERT INTO inventory (quantity)
+	VALUES (418);
+INSERT INTO inventory (quantity)
+	VALUES (298);
+INSERT INTO inventory (quantity)
+	VALUES (572);
+INSERT INTO inventory (quantity)
+	VALUES (382);
+INSERT INTO inventory (quantity)
+	VALUES (76);
+INSERT INTO inventory (quantity)
+	VALUES (310);
+INSERT INTO inventory (quantity)
+	VALUES (328);
+INSERT INTO inventory (quantity)
+	VALUES (68);
+INSERT INTO inventory (quantity)
+	VALUES (557);
+INSERT INTO inventory (quantity)
+	VALUES (398);
+INSERT INTO inventory (quantity)
+	VALUES (454);
+INSERT INTO inventory (quantity)
+	VALUES (387);
+INSERT INTO inventory (quantity)
+	VALUES (666);
+INSERT INTO inventory (quantity)
+	VALUES (107);
+INSERT INTO inventory (quantity)
+	VALUES (184);
+INSERT INTO inventory (quantity)
+	VALUES (320);
+INSERT INTO inventory (quantity)
+	VALUES (125);
+INSERT INTO inventory (quantity)
+	VALUES (29);
+INSERT INTO inventory (quantity)
+	VALUES (172);
+INSERT INTO inventory (quantity)
+	VALUES (33);
+INSERT INTO inventory (quantity)
+	VALUES (530);
+INSERT INTO inventory (quantity)
+	VALUES (4);
+INSERT INTO inventory (quantity)
+	VALUES (320);
+INSERT INTO inventory (quantity)
+	VALUES (571);
+INSERT INTO inventory (quantity)
+	VALUES (669);
+INSERT INTO inventory (quantity)
+	VALUES (109);
+
