@@ -86,12 +86,17 @@
     //use a table to print the results
     echo "<table border=3>";
       echo "<tr>";
+        echo "<th>Product Number</th>";
         echo "<th>Product</th>";
         echo "<th>Product Details</th>";
       echo "</tr>";
       foreach($rows as $value)
       {
         echo "<tr>";
+          echo "<td>";
+            echo "$value[number]";
+          echo "</td>";
+
           echo "<td>";
             echo "$value[description]";
           echo "</td>";

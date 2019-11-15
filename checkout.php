@@ -21,7 +21,7 @@
   $name = "x";
   $email = "x@xmail.com";
   $address = "x streat";
-  $cnumber = "xxxx xxxx xxxx xxx";
+  $cnumber = "xxxxxxxxxxxxxxxx";
   $cxp = "xx/xxxx";
   if (array_key_exists('placeorder', $_REQUEST))
   {
@@ -79,15 +79,20 @@
                    value=$finalprice/>";
       echo "<h1>Enter Your Payment Information</h1>";
       echo "Your Name: ";
-      echo "<br> <input type=text name='name' required/> <br>";
+      echo "<br> <input type=text name='name'
+                        placeholder='John Smith' required/> <br>";
       echo "Your Email: ";
-      echo "<br> <input type=text name='email' required/> <br>";
+      echo "<br> <input type=text name='email'
+                        placeholder='user@email.com' required/> <br>";
       echo "Your Address: ";
-      echo "<br> <input type=text name='address' required/> <br>";
-      echo "Your Credit Card Number: (xxxx xxxx xxxx xxxx): ";
-      echo "<br> <input type=text name='cnumber' required/> <br>";
-      echo "Your Credit Card Expiration Date: (mm/yyyy): ";
-      echo "<br> <input type=text name='cexp' required/> <br>";
+      echo "<br> <input type=text name='address'
+                        placeholder='123 NESW ST.' required/> <br>";
+      echo "Credit Card Number: ";
+      echo "<br> <input type=text name='cnumber'
+                        placeholder='xxxxxxxxxxxxxxxx' required/> <br>";
+      echo "Card Expiration Date: ";
+      echo "<br> <input type=text name='cexp'
+                        placeholder='(mm/yyyy)' required/> <br>";
       echo "<br> <input type=submit name='placeorder'
                         value='Place Order'/>";
     echo "</form>";

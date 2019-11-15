@@ -14,18 +14,14 @@
 /**********************************************
 * PUSH ENTRIES INTO THE ADMIN TABLE           *
 **********************************************/
-INSERT INTO admin (bracket, charge, flag)
-        VALUES (10.00, 2.00, 'F');
-INSERT INTO admin (bracket, charge, flag)
-        VALUES (50.00, 8.00, 'N');
-INSERT INTO admin (bracket, charge, flag)
-        VALUES (100.00, 20.00, 'N');
-INSERT INTO admin (bracket, charge, flag)
-        VALUES (500.00, 50.00, 'N');
-INSERT INTO admin (bracket, charge, flag)
-        VALUES (500.01, 150.00, 'L');
-
-
+INSERT INTO admin (bracket, charge)
+        VALUES (10.00, 2.00);
+INSERT INTO admin (bracket, charge)
+        VALUES (50.00, 8.00);
+INSERT INTO admin (bracket, charge)
+        VALUES (100.00, 20.00);
+INSERT INTO admin (bracket, charge)
+        VALUES (500.00, 50.00);
 
 /**********************************************
 * PUSH ENTRIES INTO THE INVENTORY TABLE       *

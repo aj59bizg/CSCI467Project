@@ -118,47 +118,25 @@
     //set the additional fees
     $sqladd = "SELECT * FROM admin ORDER BY bracket ASC";
     $queryadd = $pdo1->query($sqladd);
+    $weightarray = $queryadd->fetchAll(PDO::FETCH_ASSOC);
 
     //set default charge
-    if ($queryadd == FALSE)
+    if (count($weightarray) == 0)
     {
-      $addfees = 1.00;
+      $addfees = 0;
     }
 
     else
     {
-      $weightarray = $queryadd->fetchAll(PDO::FETCH_ASSOC);
+      //$weightarray = $queryadd->fetchAll(PDO::FETCH_ASSOC);
 
       //set the additional fees
       foreach($weightarray as $weightbracket)
       {
-        //we are dealing with the first
-        if ($weightbracket['flag'] == 'F')
+        if ($totalweight <= $weightbracket['bracket'])
         {
-          if ($totalweight <= $weightbracket['bracket'] && $totalweight >= 0)
-          {
-            $addfees = $weightbracket['charge'];
-            break;
-          }
-        }
-
-        elseif ($weightbracket['flag'] == 'N')
-        {
-          if ($totalweight <= $weightbracket['bracket'])
-          {
-            $addfees = $weightbracket['charge'];
-            break;
-          }
-        }
-
-        //we are dealing with the last bracket
-        elseif ($weightbracket['flag'] == 'L')
-        {
-          if ($totalweight >= $weightbracket['bracket'])
-          {
-            $addfees = $weightbracket['charge'];
-            break;
-          }
+          $addfees = $weightbracket['charge'];
+          break;
         }
       }
     }

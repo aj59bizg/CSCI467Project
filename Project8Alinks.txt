@@ -5,3 +5,6 @@ http://students.cs.niu.edu/~z1817662/Project8A/catelog.php
 
 Admin:
 http://students.cs.niu.edu/~z1817662/Project8A/orders.php
+
+Inventory:
+http://students.cs.niu.edu/~z1817662/Project8A/reception.php

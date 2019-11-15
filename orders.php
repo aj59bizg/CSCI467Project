@@ -62,6 +62,11 @@
         echo "<input type=submit name='viewall'
                      value='View All Orders'/>";
       echo "</form>";
+
+      echo "<form method=post action=http://students.cs.niu.edu/~z1817662/Project8A/weights.php>";
+        echo "<input type=submit name='goweights'
+                     value='Adjust Charges'/>";
+      echo "</form>";
     }
 
     else
@@ -74,34 +79,38 @@
       echo "<form method=post action=http://students.cs.niu.edu/~z1817662/Project8A/orders.php>";
         echo "<input type=submit name='searchdate'
                      value='Search Dates Between'/>";
-        echo "<input type=text name='lowerdate' required/>";
-        echo "<input type=text name='higherdate' required/>";
+        echo "<input type=text name='lowerdate'
+                     placeholder='Lower Bound' required/>";
+        echo "<input type=text name='higherdate'
+                     placeholder='Upper Bound' required/>";
         echo "<input type=hidden name='search' value='D'/>";
       echo "</form>";
 
       echo "<form method=post action=http://students.cs.niu.edu/~z1817662/Project8A/orders.php>";
         echo "<input type=submit name='searchstatus'
                      value='Search by Status of      '/>";
-        echo "<input type=text name='status' required/>";
+        echo "<input type=text name='status'
+                     placeholder='Status' required/>";
         echo "<input type=hidden name='search' value='S'/>";
       echo "</form>";
 
       echo "<form method=post action=http://students.cs.niu.edu/~z1817662/Project8A/orders.php>";
         echo "<input type=submit name='searchprice'
                     value='Search Prices Between'/>";
-        echo "<input type=text name='lowerprice' required/>";
-        echo "<input type=text name='higherprice' required/>";
+        echo "<input type=text name='lowerprice'
+                     placeholder='Lower Bound' required/>";
+        echo "<input type=text name='higherprice'
+                     placeholder='Upper Bound' required/>";
         echo "<input type=hidden name='search' value='P'/>";
       echo "</form>";
 
       $sql1 = "SELECT ordersID, custid, finalprice, date, status FROM orders";
-      if (array_key_exists('sql', $_POST) && !array_key_exists('search', $_REQUEST))
+      if (array_key_exists('sql', $_POST) && array_key_exists('sql', $_POST))
       {
         $sql1 = $_POST['sql'];
-        echo "<br> $sql1";
       }
 
-      else if (array_key_exists('sql', $_REQUEST))
+      if (array_key_exists('sql', $_REQUEST))
       {
         $sql1 = "";
         $asarray = unserialize(base64_decode($_REQUEST['sql']));
@@ -112,13 +121,7 @@
         }
 
         $sql1 = substr($sql1, 0, -1);
-        //echo "<br> $sql1";
       }
-
-      //echo $sql1;
-      print_r($_POST);
-      echo "<br>";
-      print_r($_REQUEST);
 
       $query1 = $pdo1->query($sql1);
       $allorders = $query1->fetchAll(PDO::FETCH_ASSOC);
