@@ -2,7 +2,7 @@
 //connect to the databases
 try
 {
-  $dsn1 = "mysql:host=courses;dbname=z1813641";
+  $dsn1 = "mysql:host=courses;dbname=z1817662";
   include("Project8Apswrd.php");
   $pdo1 = new PDO($dsn1, $username1, $password1);
 }
