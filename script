@@ -36,11 +36,19 @@ CREATE TABLE IF NOT EXISTS inventory (
 **********************************************/
 CREATE TABLE IF NOT EXISTS customer (
         customerID      INT AUTO_INCREMENT,
+<<<<<<< HEAD
         name            VARCHAR(35),
         email           VARCHAR(50),
         address         VARCHAR(50),
         ccnum           VARCHAR(30),
         ccexp           VARCHAR(20),
+=======
+        name            VARCHAR(25),
+        email           VARCHAR(25),
+        address         VARCHAR(30),
+        ccnum           VARCHAR(25),
+        ccexp           VARCHAR(15),
+>>>>>>> amy
 
         PRIMARY KEY (customerid)
 );
@@ -84,6 +92,10 @@ CREATE TABLE IF NOT EXISTS ordereditems (
 CREATE TABLE IF NOT EXISTS admin (
 	bracket		FLOAT(7,2),
 	charge		FLOAT(7,2),
+<<<<<<< HEAD
+=======
+	flag		CHAR(1),
+>>>>>>> amy
 
 	PRIMARY KEY (bracket)
 );
