@@ -10,7 +10,7 @@
     require("conn.php");
 	
     // try adding form to select order id:
-    echo '<form action="invoice.php" method="post">';
+    echo '<form action="shippinglabel.php" method="post">';
     echo 'Order ID: <input type=text name=orderid id=orderid><br>'; // input box for order id number
     echo '<br><input type="submit" name="Print Label" value="Print Label"><br>'; // Print label button
     echo '</form>';
